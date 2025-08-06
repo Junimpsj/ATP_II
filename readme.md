@@ -1,38 +1,66 @@
-# 🧠 Algoritmos e Técnicas de Programação II - Listas de Exercícios
+# 🧠 Algoritmos e Técnicas de Programação II (ATP II)
 
-Este repositório contém a resolução das listas de exercícios da disciplina **Algoritmos e Técnicas de Programação II**, desenvolvidas em linguagem **C**. O objetivo é consolidar os conceitos aprendidos em sala por meio da prática em problemas progressivos, promovendo domínio de estruturas fundamentais e técnicas de programação.
+Este repositório reúne tanto a **resolução das listas de exercícios** quanto as **anotações teóricas e exemplos práticos** desenvolvidos durante as aulas da disciplina **Algoritmos e Técnicas de Programação II**, utilizando a linguagem **C**.
 
-## 📚 Conteúdos Trabalhados
+O objetivo é consolidar os conhecimentos por meio de práticas progressivas e registros que reforçam os principais conceitos abordados em sala.
 
-As listas abrangem os seguintes tópicos fundamentais da linguagem C e da lógica de programação avançada:
 
-- **Vetores e Strings**
-- **Funções e Modularização**
-- **Recursividade**
-- **Ponteiros e Aritmética de Ponteiros**
-- **Ordenação (Bubble Sort, Merge Sort, Quick Sort)**
-- **Busca Linear e Binária**
-- **Structs e Tipos Definidos pelo Usuário**
-- **Matrizes**
-- **Arquivos Texto e Binários**
-- **Parâmetros de Linha de Comando (argc, argv)**
+## 📁 Estrutura do Repositório
 
-## 🧩 Lista 1 – Arrays e Ponteiros
-📝 **Número total de exercícios**: 40  
-📂 **Localização**: `lista1/`
+ATP_II/  
+├── lista1/ # Exercícios resolvidos da Lista 1  
+│ ├── ex1.c  
+│ ├── ex2.c  
+│ ├── ...  
+│ ├── ex13.c  
+│ └── lista1.pdf # Enunciado original da lista  
+│  
+├── exemplos_aulas/ # Exemplos e anotações das aulas  
+│ ├── aula1/  
+│ │ ├── aula1.c  
+│ │ └── aula1.md  
+│ ├── aula2/  
+│ │ ├── aula2.c  
+│ │ └── aula2.md  
+│ └── aula3/  
+│ ├── aula3.c  
+│ └── aula3.md  
 
-## 🧩 Lista 2 – Em breve...
-📝 **Número total de exercícios**: ??
-📂 **Localização**: `lista2/`
 
-...
+## 📚 Conteúdos Abordados
 
-## 🛠️ Como Executar
+Este material contempla os seguintes tópicos fundamentais:
+
+- ✅ Vetores e Strings  
+- ✅ Ponteiros e Aritmética de Ponteiros  
+- ✅ Funções e Modularização  
+- ✅ Recursividade  
+- ✅ Structs e Tipos Definidos pelo Usuário  
+- ✅ Manipulação de Arquivos Texto/Binário  
+- ✅ Organização e boas práticas em C  
+
+
+## 🧪 Como Executar os Códigos
+
+Para compilar e executar os exercícios ou exemplos:
 
 1. Certifique-se de ter o compilador `gcc` instalado.
-2. Navegue até a pasta da lista desejada.
-3. Compile o arquivo desejado:
+2. Navegue até a pasta correspondente ao exercício ou aula.
+3. Compile e execute o programa:
 
 ```bash
-gcc exercicio01.c -o exercicio01
-./exercicio01
+gcc arquivo.c -o arquivo
+./arquivo
+```
+
+
+## 🗒️ Sobre as Anotações
+Os arquivos .md encontrados em exemplos_aulas/ contêm anotações das aulas com explicações teóricas, comentários importantes do professor e análises dos exemplos práticos abordados. Já os arquivos .c apresentam as implementações discutidas em aula.
+
+Essas anotações têm como objetivo servir como material de estudo complementar, especialmente útil para revisões, provas e consolidação do conteúdo.
+
+## 📌 Requisitos
+GCC instalado (padrão em sistemas Linux e disponível via MinGW para Windows)
+
+Editor de texto (Visual Studio Code, Vim, Sublime Text, etc.)
+
