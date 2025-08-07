@@ -27,7 +27,7 @@ int fatorialOtimizado(int n) {
         return 1;
     }
     
-    return n * funcaoFatorial(n -1);
+    return n * fatorialOtimizado(n -1);
 }
 
 int main() {

@@ -92,7 +92,7 @@ Os parâmetros de funções podem ser passados de dois modos:
 
 Para se acessar a variável referenciada dentro da função na passagem por referência devemos preceder a variável com o símbolo "*".
 
-#### **Ponteiros**
+### **Ponteiros**
 
 Em C, referências são implementadas por meio de ponteiros. Ponteiros correspondem ao endereço da variável na memória.  
 Regras:
