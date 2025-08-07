@@ -51,3 +51,58 @@ O programa principal do nossos sistema é uma função especial com tipo de reto
 
 #### **Protótipos de funções**
 
+Para organizar melhor um programa e implementar funções em partes distintas do arquivo são utilizado **protótipos de funções**.
+
+Eles são basicamente a primeira linha da declaração de uma função (o cabeçalho da função) onde declaramos seu tipo, seu nome e seus parâmetros.
+
+Note que:
+```
+tipo nome(tipo parametro1, ..., tipo parametroN);
+```
+
+O protótipo de uma função deve sempre vir antes de seu uso. Já sua definição pode aparecer em qualquer lugar do programa.
+
+#### **Variaveis locais e globais**
+
+Uma variável é **local** se ela foi declarada dentro de uma função:  
+-> ela existe somente dentro da função;  
+-> quando a execução da função termina, a variável deixa de existir;  
+-> parâmetros são variáveis locais;
+
+Uma variável é **global** se ela for declarada fora de qualquer função:  
+-> a variável é visível em todas as funções;  
+-> qualquer função pode modificar a variável;  
+-> a variável existe durante toda a execução do programa;  
+-> só deve ser usada em casos muito especiais;
+
+OBS: O **escopo** de uma variável determina onde ela pode ser acessada, a regra de escopo em C é bem simples e se resumo nos dois tipos de váriaveis acima e suas definições.
+
+#### **Passagem de parâmetros**
+
+Os parâmetros de funções podem ser passados de dois modos:
+-> Por **valor**, onde os valores são copiados (modo padrão);
+-> Por **referência**, onde uma referência para o local de memória da variável é passado;
+
+| Por Valor                                            | Por Referência |
+| ---------------------------------------------------- | ----------------------------------------------- |
+| Apenas o resultado da expressão é passado            | Uma referência de uma variável é passada        |
+| Pode ser qualquer expressão                          | Apenas variáveis podem ser utilizadas           |
+| Os valores são atribuidos para os parâmetros formais | A referência deve ser explicita com o operador &|
+| Não alteram os valores das variáveis passadas        | Alteram o valor das variáveis passadas          |
+
+Para se acessar a variável referenciada dentro da função na passagem por referência devemos preceder a variável com o símbolo "*".
+
+#### **Ponteiros**
+
+Em C, referências são implementadas por meio de ponteiros. Ponteiros correspondem ao endereço da variável na memória.  
+Regras:
+
+-> declaramos um ponteiro como tipo *ponteiro;  
+-> obtemos um ponteiro de uma variável com o operador &;  
+-> obtemos a variável de um ponteiro com o operador "*";
+
+Dicas:
+
+-> *ptr : o apontado por, o conteúdo do endereço da varíavel que o ptr aponta (ou então lembra que o * significa que estamos mexendo com o conteúdo da varíavel apontada);  
+-> ptr : o endereço da variavel;  
+-> &ptr : o endereço do ponteiro;

@@ -5,28 +5,6 @@ Este repositório reúne tanto a **resolução das listas de exercícios** quant
 O objetivo é consolidar os conhecimentos por meio de práticas progressivas e registros que reforçam os principais conceitos abordados em sala.
 
 
-## 📁 Estrutura do Repositório
-
-ATP_II/  
-├── lista1/ # Exercícios resolvidos da Lista 1  
-│ ├── ex1.c  
-│ ├── ex2.c  
-│ ├── ...  
-│ ├── ex13.c  
-│ └── lista1.pdf # Enunciado original da lista  
-│  
-├── exemplos_aulas/ # Exemplos e anotações das aulas  
-│ ├── aula1/  
-│ │ ├── aula1.c  
-│ │ └── aula1.md  
-│ ├── aula2/  
-│ │ ├── aula2.c  
-│ │ └── aula2.md  
-│ └── aula3/  
-│ ├── aula3.c  
-│ └── aula3.md  
-
-
 ## 📚 Conteúdos Abordados
 
 Este material contempla os seguintes tópicos fundamentais:
@@ -40,6 +18,15 @@ Este material contempla os seguintes tópicos fundamentais:
 - ✅ Organização e boas práticas em C  
 
 
+## 🧩 Lista 1 – Arrays e Ponteiros
+📝 **Número total de exercícios**: 40  
+📂 **Localização**: `lista1/`
+
+## 🧩 Lista 2 – Em breve...
+📝 **Número total de exercícios**: ??
+📂 **Localização**: `lista2/`
+
+
 ## 🧪 Como Executar os Códigos
 
 Para compilar e executar os exercícios ou exemplos:
@@ -49,7 +36,7 @@ Para compilar e executar os exercícios ou exemplos:
 3. Compile e execute o programa:
 
 ```bash
-gcc arquivo.c -o arquivo
+gcc -o arquivo.c arquivo
 ./arquivo
 ```
 
@@ -63,4 +50,3 @@ Essas anotações têm como objetivo servir como material de estudo complementar
 GCC instalado (padrão em sistemas Linux e disponível via MinGW para Windows)
 
 Editor de texto (Visual Studio Code, Vim, Sublime Text, etc.)
-
