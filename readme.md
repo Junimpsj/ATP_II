@@ -18,12 +18,12 @@ Este material contempla os seguintes tópicos fundamentais:
 - ✅ Organização e boas práticas em C  
 
 
-## 🧩 Lista 1 – Arrays e Ponteiros
+## 🧩 Lista 1 – Arrays e Ponteiros, String.h, Argc e Argv
 📝 **Número total de exercícios**: 40  
 📂 **Localização**: `lista1/`
 
-## 🧩 Lista 2 – Em breve...
-📝 **Número total de exercícios**: ??
+## 🧩 Lista 2 – Matrizes
+📝 **Número total de exercícios**: 65
 📂 **Localização**: `lista2/`
 
 
