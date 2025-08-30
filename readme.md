@@ -23,9 +23,14 @@ Este material contempla os seguintes tópicos fundamentais:
 📂 **Localização**: `lista1/`
 
 ## 🧩 Lista 2 – Matrizes
-📝 **Número total de exercícios**: 65
+📝 **Número total de exercícios**: 65  
 📂 **Localização**: `lista2/`
 
+**OBS:** Sobre a lista dois, eu fiz até o exercício 14 direto. Ai então percebi que muitos exercícios eram repetitivos, pra resolver isso eu passei a selecionar apenas os exemplos que traziam alguma novidade ou nível de dificuldade mais elevado.
+
+## 🧩 Lista 5 – Recursão
+📝 **Número total de exercícios**: 15  
+📂 **Localização**: `lista5/`
 
 ## 🧪 Como Executar os Códigos
 
