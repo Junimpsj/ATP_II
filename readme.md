@@ -29,7 +29,7 @@ Este material contempla os seguintes tópicos fundamentais:
 **OBS:** Sobre a lista dois, eu fiz até o exercício 14 direto. Ai então percebi que muitos exercícios eram repetitivos, pra resolver isso eu passei a selecionar apenas os exemplos que traziam alguma novidade ou nível de dificuldade mais elevado.
 
 ## 🧩 Lista 5 – Recursão
-📝 **Número total de exercícios**: 15  
+📝 **Número total de exercícios**: 20  
 📂 **Localização**: `lista5/`
 
 ## 🧪 Como Executar os Códigos
