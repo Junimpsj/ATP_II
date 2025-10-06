@@ -1,10 +1,10 @@
-## Anotações Aula 01 - ATPII
+## **Anotações Aula 01 - ATPII**
 
-### **Vetor - Definição**  
-Vetor é uma coleção de variáveis de um mesmo tipo referenciada por um nome comum.
+### **Vetor - Definição**
+Vetor é uma coleção de variáveis de um mesmo tipo referenciadas por um nome comum.
 
-. Acessado por meio de um índice;  
-. O tamanho máximo da coleção de elementos N é pré-definido;
+- Acessado por meio de um índice;
+- O tamanho máximo da coleção de elementos N é pré-definido;
 
 #### **Declarando um vetor:**
 
@@ -12,50 +12,50 @@ Vetor é uma coleção de variáveis de um mesmo tipo referenciada por um nome c
 <tipo> identificador[N];
 ```
 
-Exemplos: float notas[100]; | int medias[100]; | char nome[200];  
+Exemplos: `float notas[100];`, `int médias[100];`, `char nome[200];`
 
 #### **Acessando variável em uma posição do vetor:**
 
 ```
 a = vetor[i];
 ```
-A posição "i" pode ser qualquer valor inteiros, podemos usar constantes ou variáveis também.
+A posição "i" pode ser qualquer valor inteiro; podemos usar constantes ou variáveis também.
 
-- Melhores prática para vetores:
+- Melhores práticas para vetores:
 
-O tamanho do vetor é constante, então sempre deve se escolher um bom tamanho.  
+O tamanho do vetor é fixo, então sempre deve-se escolher um bom tamanho.
 
--> Se for muito grande, vamos desperdiçar memória.  
--> Se for muito pequeno, vai faltar memória.
+- Se for muito grande, vamos desperdiçar memória.
+- Se for muito pequeno, vai faltar memória.
 
-Tome cuidado com a verificação do indice do vetor.
+Tome cuidado com a verificação do índice do vetor.
 
--> Indíces fora dos limites causam efeitos indesejados:
-. alteram valores de outras variáveis
-. causam _segmentation fault_
+- Índices fora dos limites causam efeitos indesejados:
+  - Alteram valores de outras variáveis
+  - Causam _segmentation fault_
 
 ### **Trabalhando com Texto**
 
 Como podemos representar um nome em C?
 
-. Cada nome é uma sequência de caracteres  
-. Então utilizamos um vetor de caracteres
+- Cada nome é uma sequência de caracteres
+- Então utilizamos um vetor de caracteres
 
 #### **Estratégia para trabalhar com caracteres:**
 
-Declare um vetor com espaço suficiente para um nome grande. Lemos então e letra do nome e armazenamos em um espaço do vetor, quando o nome acabar o usuário deve digitar o caractere "-".
+Declare um vetor com espaço suficiente para um nome grande. Lemos então cada letra do nome e armazenamos em um espaço do vetor; quando o nome acabar o usuário deve digitar o caractere "-".
 
-**Porém, devemos notar que, para trabalhar com nomes mais complexos essa estratégia se torna ultrapassada. Pois ai então utilizamos Strings.**
+**Porém, devemos notar que, para trabalhar com nomes mais complexos, essa estratégia se torna ultrapassada. Pois aí utilizamos strings.**
 
-#### **Sobre Strings:**
+#### **Sobre strings:**
 
-Em C, textos são vetores de caracteres. E para representar o final do texto, usamos o valor inteiro **zero**.
+Em C, textos são vetores de caracteres. E, para representar o final do texto, usamos o valor inteiro **zero**.
 
-Na tabela ASCII, o número zero não corresponde a nenhum caractere! (As vezes representado como "caractere nulo" '\0').
+Na tabela ASCII, o número zero não corresponde a nenhum caractere! (Às vezes representado como "caractere nulo" '\0').
 
-**Atençao!! Sempre se lembre do caractere \0 que finaliza a String. Por exemplo, para armazenar "ROMA" precisamos de um vetor de tamanho cinco!**
+**Atenção: sempre se lembre do caractere \0 que finaliza a string. Por exemplo, para armazenar "ROMA" precisamos de um vetor de tamanho cinco!**
 
-As funções printf e scanf facilitam nossa vida quanto a isso.
+As funções `printf` e `scanf` facilitam nossa vida quanto a isso.
 
 Exemplo:
 ```
@@ -66,9 +66,9 @@ scanf("%s", nome);
 
 printf("O nome digitado foi %s", nome);
 ```
-OBS: para strings não utilizamos o operador de memória &.
+Obs.: para strings não utilizamos o operador de memória `&`.
 
-Outros exemplos com String:
+Outros exemplos com strings:
 ```
 char nome[30], nome_invertido[30];
 
@@ -79,14 +79,14 @@ printf("Escreva o nome: ");
 scanf("%s", nome);
 
 // descobre o número de caracteres do nome
-for (tamanho = 0; nome[tamanho] != ’\0’; tamanho++);
+for (tamanho = 0; nome[tamanho] != '\0'; tamanho++);
 
 // copia o nome em outro vetor na ordem inversa
 for (i = 0; i < tamanho; i++)
-nome_invertido[i] = nome[tamanho - i - 1];
+	nome_invertido[i] = nome[tamanho - i - 1];
 
 // coloca o caractere de final de string no nome invertido
-nome_invertido[tamanho] = ’\0’;
+nome_invertido[tamanho] = '\0';
 
 printf("O nome invertido é %s", nome_invertido);
 ```

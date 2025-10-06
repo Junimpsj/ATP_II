@@ -1,45 +1,44 @@
-## Anotações Aula 4.5 - ATP II
+## **Anotações Aula 5 - ATP II**
 
 ### **Ordenação**
-Vamos estudar agora algoritmos para ordenar conjuntos de elementos. Os elementos podem ser de qualquer tipo que possamos comparar:  
-. números inteiros;  
-. nome de pessoas;  
-. times de futebol...
+Vamos estudar agora algoritmos para ordenar conjuntos de elementos. Os elementos podem ser de qualquer tipo que possamos comparar:
+- Números inteiros;
+- Nomes de pessoas;
+- Times de futebol...
 
-Os algoritmos podem ordenar crescente ou decrescentemente, dependendo da direção da comparação.
+Os algoritmos podem ordenar de forma crescente ou decrescente, dependendo da direção da comparação.
 
-E quando falamos em algoritmos de ordenação, existem diversas **estratégias** que podemos utilizar, alguns exemplos são:  
--> Selecionar o menor a cada vez e colocar na ponta;  
--> Trocar itens fora de ordem;  
--> Outras?
+E quando falamos em algoritmos de ordenação, existem diversas **estratégias** que podemos utilizar. Alguns exemplos são:
+- Selecionar o menor a cada vez e colocar na ponta;
+- Trocar itens fora de ordem;
+- Outras?
 
 "Estratégias diferentes levam a algoritmos diferentes".
 
 ### **Ordenação por Seleção**
 Na ordenação por seleção temos a ideia inicial, a mais básica, de fazer da seguinte forma:
 
-. Inicialmente, temos uma lista de itens desordenados  
-. Selecionamos o menor dos elementos  
-. Movemos o item para uma nova lista na primeiro posição  
-. Voltamos para a lista inicial e selecionamos o menor novamente
-. Movemos o item para a nova lista na segunda posição  
-. Repetimos esse processo...
+- Inicialmente, temos uma lista de itens desordenados
+- Selecionamos o menor dos elementos
+- Movemos o item para uma nova lista na primeira posição
+- Voltamos para a lista inicial e selecionamos o menor novamente
+- Movemos o item para a nova lista na segunda posição
+- Repetimos esse processo...
 
 Porém, podemos ainda assim melhorar esse processo de forma que não precisamos de uma nova lista. Seguimos:
 
-. Selecionar menor elemento  
-. Trocar com o primeiro elemento da lista  
-. Repetimos esse processo...
+- Selecionar menor elemento
+- Trocar com o primeiro elemento da lista
+- Repetimos esse processo...
 
 #### **Convenções práticas**
 
 Vamos entender a lógica na prática para implementar uma função que ordena inteiros.
 
-A função terá os seguintes parâmetros: 
+A função terá os seguintes parâmetros:
 
-``int vetor[]``, vetor de inteiros onde estão os elementos.  
-
-``int n``, o número de elementos do vetor.
+- `int vetor[]`, vetor de inteiros onde estão os elementos.
+- `int n`, o número de elementos do vetor.
 
 **OBS:** Para trocar dois valores, vamos sempre utilizar da seguinte função:
 
@@ -65,9 +64,9 @@ int selection_sort(int vetor[], int n) {
 }
 ```
 
-O selection-sort tem uma lógica bem básica onde recebemos o vetor e seu tamanho como parâmetros. Criamos então dentro da função um contador "i" qualquer e uma variável "menor" que vai guardar a posição do menor número no vetor.
+O selection-sort tem uma lógica bem básica: recebemos o vetor e seu tamanho como parâmetros. Criamos então dentro da função um contador "i" e uma variável "menor" que vai guardar a posição do menor número no vetor.
 
-Por fim, utilizamos um for padrão para percorrer o vetor de forma que a cada iteração recebemos a posição do próximo menor número do vetor com a função "menor_elemento" que é uma função auxiliar que vou mostrar a seguir. E então realizamos por fim a troca com a linha de comendo "trocar(&vetor[i], &vetor[menor])" dessa forma realizando a troca do elemento na posição atual (primeira, segunda, terceira etc...) com o elemento de menor número no vetor para obtermos a ordenação.
+Por fim, utilizamos um `for` padrão para percorrer o vetor de forma que, a cada iteração, obtemos a posição do próximo menor número do vetor com a função `menor_elemento` — que é uma função auxiliar mostrada a seguir — e então realizamos a troca com a linha de comando `trocar(&vetor[i], &vetor[menor])`. Assim trocamos o elemento na posição atual com o elemento de menor número no vetor para obter a ordenação.
 
 #### **Função auxiliar menor_elemento**
 
@@ -87,21 +86,21 @@ int menor_elemento(int vetor[], int n, int primeiro) {
 ### **Ordenação por Inserção**
 Na ordenação por inserção temos a ideia de ordenar da seguinte forma:
 
-. pegamos uma lista de itens desordenados  
-. retiramos o primeiro elementos  
-. inserimos este item em uma nova lista **na ordem**  
-. repetimos o processo....
+- Pegamos uma lista de itens desordenados
+- Retiramos o primeiro elemento
+- Inserimos este item em uma nova lista **na ordem**
+- Repetimos o processo....
 
 E como devemos fazer esse processo utilizando um mesmo vetor?
 
-. o primeiro elemento já está ordenado  
-. retiramos o primeiro elemento desornado (o segundo elemento no caso)  
-. procuramos a posição em que ele deve ser inserido  
-. deslocamos os elementos ordenados seguintes  
-. inserimos o elemento retirado na ordem correta  
-. repetimos com o restante da lista
+- O primeiro elemento já está ordenado
+- Retiramos o segundo elemento (o primeiro elemento desordenado)
+- Procuramos a posição em que ele deve ser inserido
+- Deslocamos os elementos ordenados seguintes
+- Inserimos o elemento retirado na ordem correta
+- Repetimos com o restante da lista
 
-#### **Insertion_sorte**
+#### **Insertion_sort**
 
 ```
 int ordenar_insercao(int vetor[], int n) {
@@ -151,6 +150,6 @@ vetor[i+1] = vetor[i];
 
 Na ordenação por seleção, a primeira coisa a se fazer é identificar o elemento que deve ser o próximo da ordem (no caso de uma ordem crescente, começamos pelo menor elemento e assim vamos) e depois jogamos para um novo vetor só inserindo em sequência pois a seleção do elemento certo já foi feita antes.
 
-No caso da ordenação por inserção, nós selecionamos qualquer elemento do vetor (claro que fazemos isso seguindo uma ordem de primeiro, segundo, terceiro elemento etc...) e quando vamos inserir ele em seu novo vetor ordenado ou em sua nova posição ai sim que verificamos em qual posição ele deve entrar.
+No caso da ordenação por inserção, nós selecionamos um elemento do vetor (seguindo a ordem: primeiro, segundo, terceiro etc.) e, quando vamos inseri-lo em sua nova posição, verificamos em qual posição ele deve entrar.
 
 Basicamente, na primeira já realizamos a seleção do elemento correto que deve ser o próximo da ordem antes e na segunda nós podemos pegar um elemento "aleatório" pois é quando vamos inserir ele na ordem correta que fazemos a verificação.

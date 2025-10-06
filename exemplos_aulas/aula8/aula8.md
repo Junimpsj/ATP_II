@@ -1,4 +1,4 @@
-## Anotações Aula 8 - ATP II
+## **Anotações Aula 8 - ATP II**
 
 ### **Matrizes**
 Considere a seguinte matriz:
@@ -9,9 +9,9 @@ Considere a seguinte matriz:
 |**1**   |11   |12   |13   |14   |
 |**2**   |121  |122  |123  |124  |
 
-OBS: a primeira linha e a segunda coluna que está em negrito serve apenas para mostrar a posição dos número. Sendo i e j.
+OBS: a primeira linha e a primeira coluna que estão em negrito servem apenas para mostrar a posição dos números, sendo i e j.
 
-A matriz é uma estrutura bidimensional, mas a memória é linear. E para armazenar ela fazemos isso com uma linha de cada vez, pensando na memória como um vetor.
+A matriz é uma estrutura bidimensional, mas a memória é linear. E para armazená-la fazemos isso com uma linha de cada vez, pensando na memória como um vetor.
 
 No vetor:
 ### Vetor
@@ -20,11 +20,11 @@ No vetor:
 |--------|-------|-------|-------|-------|-------|-------|-------|-------|--------|--------|--------|--------|
 | Valor  | 1     | 2     | 3     | 4     | 11    | 12    | 13    | 14    | 121    | 122    | 123    | 124    |
 
-Como então encontrar por exemplo a posição ``matriz[2][1]``, sendo o valor 122 na matriz linear?
+Como, então, encontrar por exemplo a posição `matriz[2][1]`, sendo o valor 122 na matriz linear?
 
-Utilizamos a fórmula: ``i * qtdColunas + j.``
+Utilizamos a fórmula: `i * qtdColunas + j`.
 
-Sendo i o indice da linha na matriz convencional | E j o indice da coluna na matriz convencional.
+Sendo i o índice da linha na matriz convencional e j o índice da coluna na matriz convencional.
 
 Observe que precisamos saber a largura da matriz para isso (sua quantidade de colunas).
 
@@ -40,17 +40,17 @@ int i, j;
 int matriz[ALTURA][LARGURA];
 int matriz_linear[LARGURA * ALTURA];
 
-//lendo a matriz
+// lendo a matriz
 for(i = 0 ; i < ALTURA ; i++) {
     for(j = 0 ; j < LARGURA ; j++) {
         scanf("%d", &matriz[i][j]);
     }
 }
 
-//copiando para vetor
+// copiando para vetor
 for(i = 0 ; i < ALTURA ; i++) {
     for(j = 0 ; j < LARGURA ; j++) {
-        matriz_linear[i * LARGURA + J] = matriz[i][j];
+        matriz_linear[i * LARGURA + j] = matriz[i][j];
     }
 }
 ```

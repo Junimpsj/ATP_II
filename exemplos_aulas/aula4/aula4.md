@@ -1,15 +1,15 @@
-## Anotações Aula 04 - ATPII
+## **Anotações Aula 04 - ATPII**
 
 ### **Recursão**
-A ideia é que um problema pode ser resolvido da seguinte maneira:  
--> **primeiramente**, definimos soluçoes para casos básicos (casos base);  
--> **em seguida**, tentamos reduzir o problema para instâncias menoras;  
--> **finalmente**, combinamos o resultado das instâncias menores para obter um resultado do problema original;
+A ideia é que um problema pode ser resolvido da seguinte maneira:
+- **Primeiramente**, definimos soluções para casos básicos (casos base);
+- **Em seguida**, tentamos reduzir o problema para instâncias menores;
+- **Finalmente**, combinamos o resultado das instâncias menores para obter um resultado do problema original;
 
 Certos tipos de problemas são naturalmente recursivos, como por exemplo o fatorial de um número.
 
 $$
-n! = 
+n! = \
 \begin{cases}
 1 & \text{se } n = 0 \\
 n \cdot (n - 1)! & \text{se } n > 0
@@ -30,12 +30,12 @@ Como combinamos o resultado para resolver o problema original?
 ```
 
 ### **Pilhas de chamada**
-Situação: Lidando com váriáveis da função.  
-. Imagine que toda função tem suas variáveis locais;
-. Quando chamamos a função fatorial, cada chamada cria as variáveis N, X e Y;  
-. Só que nós chamamos a função fatorial várias vezes, afinal ela é recursiva;  
-. Então, em um dado instante, podem existir variáveis N, X e Y, um trio para cada chamada (e ai fudeu);
+Situação: Lidando com variáveis da função.
+- Imagine que toda função tem suas variáveis locais;
+- Quando chamamos a função fatorial, cada chamada cria as variáveis N, X e Y;
+- Porém, nós chamamos a função fatorial várias vezes, afinal ela é recursiva;
+- Então, em um dado instante, podem existir variáveis N, X e Y, um trio para cada chamada (e aí complicou);
 
-Para manter várias cópias de variáveis locais de uma função, elas são colocadas em uma pilha de chamada (ou pilha de execução) toda vez que uma função é chamada e são retirada da pilha quando a função termina.
+Para manter várias cópias de variáveis locais de uma função, elas são colocadas em uma pilha de chamada (ou pilha de execução) toda vez que uma função é chamada e são retiradas da pilha quando a função termina.
 
-E é isso ai, por enquanto é só pra entender esse conceito mesmo 👍
+E é isso aí, por enquanto é só para entender esse conceito mesmo. 👍
