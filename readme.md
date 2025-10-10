@@ -28,6 +28,14 @@ Este material contempla os seguintes tópicos fundamentais:
 
 **OBS:** Sobre a lista dois, eu fiz até o exercício 14 direto. Ai então percebi que muitos exercícios eram repetitivos, pra resolver isso eu passei a selecionar apenas os exemplos que traziam alguma novidade ou nível de dificuldade mais elevado.
 
+## 🧩 Lista 3 – Structs, Union, Typedef e Enum
+📝 **Número total de exercícios**: 40  
+📂 **Localização**: `lista3/`
+
+## 🧩 Lista 4 – Arquivos de Texto e Árquivos BInários
+📝 **Número total de exercícios**: 38  
+📂 **Localização**: `lista4/` **(EM CONSTRUÇÃO AINDA)**
+
 ## 🧩 Lista 5 – Recursão
 📝 **Número total de exercícios**: 20  
 📂 **Localização**: `lista5/`
